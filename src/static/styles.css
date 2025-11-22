@@ -142,3 +142,45 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants strong {
+  display: block;
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.participants ul {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 6px;
+}
+
+.participants li {
+  padding: 4px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* subtle styling for empty state */
+.participants .no-participants {
+  color: #888;
+  font-style: italic;
+}
+
+/* short badge-like style for participant names (optional nice touch) */
+.participants .participant-name {
+  display: inline-block;
+  background: #f1f3ff;
+  color: #16325c;
+  padding: 3px 8px;
+  margin: 2px 0;
+  border-radius: 12px;
+  font-size: 13px;
+  border: 1px solid #e0e4ff;
+}
