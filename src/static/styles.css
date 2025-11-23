@@ -156,15 +156,48 @@ footer {
 }
 
 .participants ul {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
-  padding-left: 6px;
+  padding-left: 0;
 }
 
 .participants li {
   padding: 4px 0;
   color: #444;
   font-size: 14px;
+}
+
+/* participant list items as horizontal rows */
+.participants .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participants .participant-name {
+  display: inline-block;
+  background: #f1f3ff;
+  color: #16325c;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  border: 1px solid #e0e4ff;
+}
+
+.participants .delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.participants .delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* subtle styling for empty state */
